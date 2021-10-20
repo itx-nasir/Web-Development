@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My gym Website</title>
+    <title>Nasir Fitness Club</title>
 
 </head>
 <!-- <link rel="stylesheet" href="css/style.css"> -->
@@ -18,56 +18,99 @@
         background-size: 1500px 900px;
         color: white;
     }
-    .left
-    {
+
+    .left {
         position: absolute;
-        left: 30px;
-        top: 20px;
+        left: 10px;
+        top: 10px;
         display: inline-block;
         border: 2px solid green;
+        width: 80px;
+        height: 70px;
     }
-    .center
-    {
+
+    .left img {
+        /* width: 60px; */
         display: block;
-        width: 30%;
-        margin: 20px auto;
+
+
+        width: 60%;
+
+
+        margin-left: auto;
+
+
+        margin-right: auto;
+        /* filter: invert(100%); */
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .center {
+        display: block;
+        width: 35%;
+        margin: 10px auto;
         border: 2px solid rgb(0, 128, 79);
     }
-    .right
-    {
+
+    .right {
         position: absolute;
-        right: 30px;
-        top: 20px;
+        right: 10px;
+        top: 10px;
         display: inline-block;
         border: 2px solid red;
 
     }
-    .navbar
+    .btn
     {
+        margin:5px 8px;
+        background-color: black;
+        color: white;
+        padding: 3px 4px;
+    }
+
+    .navbar {
         display: inline-block;
     }
-    .navbar li
-    {
+
+    .navbar li {
         display: inline-block;
+        font-size: 17px;
     }
-    .navbar li a
-    {
+
+    .navbar li a {
+        padding: 100px 10px;
+
         color: white;
         text-decoration: none;
     }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(86, 15, 228);
+    }
+    
 </style>
 
 <body>
     <header>
         <div class="left">
+            <img src="static/icon.png" alt="">
+            <div>Nasir Fitness</div>
         </div>
-        <div class="right">right</div>
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email us Now</button>
+        </div>
         <div class="center">
             <ul class="navbar">
-                <li ><a href="#">Home</a></li>
-                <li ><a href="#">Fitness Calculator</a></li>
-                <li ><a href="#">About Us</a></li>
-                <li ><a href="#">Contact Us</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
         </div>
     </header>
