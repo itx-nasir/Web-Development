@@ -6,12 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My gym Website</title>
-    
-</head>
-<link rel="stylesheet" href="css/style.css">
-<body>
-<img src="/static/background_img.jpg" alt="error">
 
+</head>
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('static/background.jpg');
+        background-repeat: no-repeat;
+        background-size: 1500px 900px;
+        color: white;
+    }
+    .left
+    {
+        position: absolute;
+        left: 30px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid green;
+    }
+    .center
+    {
+        display: block;
+        width: 30%;
+        margin: 20px auto;
+        border: 2px solid rgb(0, 128, 79);
+    }
+    .right
+    {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid red;
+
+    }
+    .navbar
+    {
+        display: inline-block;
+    }
+    .navbar li
+    {
+        display: inline-block;
+    }
+    .navbar li a
+    {
+        color: white;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="left">
+        </div>
+        <div class="right">right</div>
+        <div class="center">
+            <ul class="navbar">
+                <li ><a href="#">Home</a></li>
+                <li ><a href="#">Fitness Calculator</a></li>
+                <li ><a href="#">About Us</a></li>
+                <li ><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
 </body>
 
 </html>
