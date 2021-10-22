@@ -66,9 +66,9 @@
         border: 2px solid red;
 
     }
-    .btn
-    {
-        margin:5px 8px;
+
+    .btn {
+        margin: 5px 8px;
         background-color: black;
         color: white;
         padding: 3px 4px;
@@ -78,8 +78,8 @@
         cursor: pointer;
         font-family: 'Baloo Bhaina 2', cursive;
     }
-    .btn:hover
-    {
+
+    .btn:hover {
         background-color: grey;
     }
 
@@ -104,7 +104,14 @@
         text-decoration: underline;
         color: rgb(86, 15, 228);
     }
-    
+
+    .container {
+        border: 2px solid;
+        border-radius: 11px;
+        margin: 64px 41px;
+        padding: 50px;
+        width: 30%;
+    }
 </style>
 
 <body>
@@ -125,6 +132,25 @@
             </ul>
         </div>
     </header>
+    <div class="container">
+        <h1>Join The Best Gym</h1>
+        <form action="noaction.php">
+           <div class="form-group">
+               <input type="text" name="" placeholder="Enter your name">
+           </div>
+           <div class="form-group">
+            <input type="text" name="" placeholder="Enter your name">
+           </div>
+           <div class="form-group">
+            <input type="text" name="" placeholder="Enter your name">
+           </div>
+           <div class="form-group">
+            <input type="text" name="" placeholder="Enter your name">
+           </div>
+           <button class="btn">submit</button>
+        </form>
+        
+    </div>
 </body>
 
 </html>
